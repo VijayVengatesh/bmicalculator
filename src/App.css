@@ -1,0 +1,123 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(57, 55, 55);
+}
+.container
+{
+  display: flex;
+  border: 2px solid rgb(202, 189, 189);
+  width: 600px;
+  height: 300px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  
+}
+.bmi-calculation
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* background-color: whitesmoke; */
+}
+.bmi-calculation .heading
+{
+  font-weight: 700;
+  /* margin-bottom: 20px; */
+  margin-left: 60px;
+  position: absolute;
+  top: 35px;
+  left: 30px;
+  
+}
+.bmi-img{
+  /* background-repeat: no-repeat; */
+  background-image: url('./assets/bmi.jpg');
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px ;
+  height: 296px;
+  border-radius: 10px;
+}
+.input-container
+{
+  margin-left: 50px;
+}
+.input-container label
+{
+  display: block;
+  color: rgb(65, 70, 132);
+  font-weight: 700;
+  margin-bottom: 7px;
+  font-size: 16px;
+  text-align: left;
+}
+.input-container input
+{
+  border: 2px solid rgba(99, 42, 255, 0.527);
+  border-radius: 5px;
+  width: 200px;
+  height: 25px;
+  outline-color: rgba(0, 0, 255, 0.283);
+  background: none;
+  color: rgb(66, 64, 64);
+  font-weight: 700;
+
+}
+.bmi-calculation div:first-child
+{
+  color:rgb(104, 104, 154);
+  font-weight: 400;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-right: 16px;
+}
+.bmi-result
+{
+  margin-top: 10px;
+  margin-left: 48px;
+  position: absolute;
+  bottom: 15px;left: 0;
+}
+.bmi-result p span{
+  color: rgb(65, 70, 132);
+  font-weight: 500;
+}
+.bmi-result p{
+  color: rgba(0, 0, 0, 0.587);
+  font-weight: 500;
+}
+.calculate-btn button
+{
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 255, 0.158);
+  background-color: rgb(65, 70, 132);
+  padding: 5px 10px;
+  margin-top: 10px;
+  color: white;
+  font-weight: 600;
+  margin-left: 55px;
+}
+.error-msg p
+{
+  color: red;
+  /* margin-bottom: 10px; */
+  font-size: 14px;
+  position: absolute;
+  top: 60px;
+  left: 48px;
+  font-weight: 500;
+}
